@@ -3,7 +3,7 @@ pragma solidity ^0.8.0;
 
 import "@openzeppelin/contracts/access/Ownable.sol";
 
-contract CommunityChest is Ownable {
+contract ethStorage is Ownable {
     function withdraw() public onlyOwner {
         payable(msg.sender).transfer(address(this).balance);
     }
